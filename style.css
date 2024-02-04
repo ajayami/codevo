@@ -16,8 +16,22 @@ body {
 }
 .head {
   position: sticky;
-  top: 0;
-  z-index: 100;
+   top: 0;
+  z-index: 100; 
+}
+i{
+  padding-inline: 15px;
+  position: relative;
+}
+#notif{
+  width: 8px;
+  height: 8px;
+  background-color: #ff5151;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0px;
+  right: 13px;
 }
 .navbar-brand {
   color: #ff5151 !important;
@@ -108,6 +122,15 @@ body {
   font-weight: 400;
   position: relative;
 }
+#mark{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ff5151;
+  position: absolute;
+  top: 6px;
+  right: 163px;
+}
 .sub-cont h6 {
   color: #000;
   font-family: Mada;
@@ -147,6 +170,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 
 /* ----------------------------------------------------------------------------------------------- */
 .collection-components * {
@@ -258,7 +282,7 @@ body {
 .cards-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   overflow: hidden;
   margin: 20px;
   width: 100%;
@@ -295,7 +319,7 @@ body {
 .card-img-top {
   height: 200px;
   border: none;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .shadow {
   position: absolute;
@@ -554,8 +578,8 @@ body {
   align-items: stretch;
   justify-content: space-between;
   padding-inline: 90px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .description {
   display: flex;
@@ -584,7 +608,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 20px;
   margin-bottom: 10px; /* Increase space between rows */
 }
 
@@ -640,7 +664,7 @@ tbody tr td {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 10px;
 }
 .contact {
   display: flex;
@@ -846,6 +870,16 @@ tbody tr td {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  #icons{
+    display: flex;
+    padding: 5px;
+    
+/*  
+    width: 20px;
+    height: 10px;
+    background-color: #ff5151; */
+  }
+
   .description a {
     font-size: 20px;
     font-weight: 600;
@@ -919,6 +953,13 @@ tbody tr td {
 
   .sub-cont {
     margin-bottom: 30px;
+  }
+  #mark{
+    width: 11px;
+    height: 11px;
+    top: -17px;
+    right: 98px;
+
   }
 
   .sub-cont p,
