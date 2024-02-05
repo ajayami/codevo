@@ -126,7 +126,12 @@ i{
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #ff5151;
+  /* background-color: #ff5151; */
+  background-image: linear-gradient(
+          to bottom,
+          rgba(255, 204, 193, 1),
+          rgba(255,  94, 58, 1)
+        );
   position: absolute;
   top: 6px;
   right: 163px;
@@ -321,6 +326,11 @@ i{
   border: none;
   margin-top: 60px;
 }
+.rate img{
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+}
 .shadow {
   position: absolute;
   bottom: 10px;
@@ -330,7 +340,7 @@ i{
 .card-body .card-title {
   color: #000;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 .cards-row .btn-primary {
@@ -437,7 +447,7 @@ i{
 .cards-row-2 {
   display: flex;
   justify-content: space-between;
-  margin-inline: 100px;
+  margin-inline: 120px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -445,7 +455,7 @@ i{
   border-radius: 25px;
   margin-top: 20px;
   overflow: hidden;
-  width: 16rem;
+  width: 17rem;
   height: 330;
   border-radius: 25px;
   box-shadow: 0px 12px 8px -8px rgba(0, 0, 0, 0.32);
@@ -460,14 +470,14 @@ i{
 }
 .card-image-2 {
   background: #f0f0f0;
-  height: 220px;
+  height: 200px;
   border: none;
   position: relative;
   margin-bottom: 10px;
 }
 
 .card-img-top-2 {
-  height: 132px;
+  height: 142px;
   margin-left: 50px;
   border: none;
   margin-top: 15px;
@@ -485,7 +495,7 @@ i{
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   margin-left: 10px;
 }
@@ -506,6 +516,9 @@ i{
 }
 .rate-2 img {
   margin-right: 15px;
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
 }
 .rate-2 a {
   margin-left: 5px;
@@ -545,19 +558,21 @@ i{
   display: none;
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 10px;
   border-radius: 10px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(255, 81, 81, 0.5) 0%,
     #ff5e3a 100%
-  ) !important;
-  padding: 8px;
+  ) !important; */
+  background-color: #ff5e3a;
+  padding: 6px 8px;
   color: #fff;
   font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   text-decoration: none;
+ 
 }
 .box-2:hover .custom-btn {
   display: block;
@@ -601,6 +616,18 @@ i{
   text-decoration: none;
   text-decoration: none;
 }
+.icons i{
+  width: 35px;
+  height: 35px;
+  /* display: flex; */
+  border-radius: 50%;
+  padding: 10px;
+  overflow: hidden;
+  margin: 5px 0px;
+  background-color: #ff5e3a;
+ 
+}
+
 
 .description p {
   color: #4f5665;
@@ -705,6 +732,19 @@ tbody tr td {
 .contact .cl {
   margin-left: 0; /* Remove default margins */
 }
+.contact i{
+  
+    width: 35px;
+    height: 35px;
+    /* display: flex; */
+    border-radius: 50%;
+    padding: 10px;
+    overflow: hidden;
+  
+    background-color: #ff5e3a;
+   
+  }
+
 .tt a {
   text-decoration: none;
 }
@@ -728,12 +768,12 @@ tbody tr td {
 .moredata tr th:hover {
   transform: scale(1.1);
   cursor: pointer;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* Table Rows */
 .moredata tr td:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
   cursor: pointer;
   font-weight: bold;
 }
